@@ -1,0 +1,54 @@
+//  Write function, which returns array of names of people, who are over 18 and their favorite 
+// fruit is apple. Reuse functions from task 3 and 4.
+// //See input data example in CODE section
+// getAdultAppleLovers(data) // returns [‘Stein’];
+const data=[
+ {
+ id: "5b5e3168c6bf40f2c1235cd6",
+ index: 0,
+ age: 39,
+ eyeColor: "green",
+ name: "Stein",
+ favoriteFruit: "apple"
+ },
+ {
+ id: "5b5e3168e328c0d72e4f27d8",
+ index: 1,
+ age: 38,
+ eyeColor: "blue",
+ name: "Cortez",
+ favoriteFruit: "strawberry"
+ },
+ {
+ id: "5b5e3168cc79132b631c666a",
+ index: 2,
+ age: 2,
+ eyeColor: "blue",
+ name: "Suzette",
+ favoriteFruit: "apple"
+ },
+ {
+ id: "5b5e31682093adcc6cd0dde5",
+ index: 3,
+ age: 17,
+ eyeColor: "green",
+ name: "Weiss",
+ favoriteFruit: "banana"
+ }
+]
+
+console.log("Kushal");
+func=(e)=>{
+    let ans= e.age >18 && e.favoriteFruit ==="apple";
+    return ans;
+    
+}
+const getAdultAppleLovers=(data)=>{
+    let finD=data.filter(func);
+    let sol=finD.map((ele)=>{
+        return ele.name;
+        
+    })
+    console.log(sol);
+}
+getAdultAppleLovers(data)
